@@ -1,26 +1,20 @@
-body {
-  margin: 10px;
-}
-
-.tweet {
+.container {
   border: 3px solid lightgray;
+  display: flex;
+  height: 90vh;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+.center-content {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.avatar {
+.box {
   width: 5rem;
   height: 5rem;
-  background-color: gold;
-  float: left;
-  margin-right: 0.5rem;
-}
-
-.clear {
-  clear: both;
+  background: gold;
+  margin: 1rem;
 }
