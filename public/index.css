@@ -1,26 +1,20 @@
-html {
-  /* font-size: 62.5%; */
-}
-
-body {
-  margin: 0;
-  height: 100vh
+.boxes {
+  border: 3px solid lightgray;
 }
 
 .box {
-  /* em is relative to font size,
-   * so if font size is 10px
-   * 10em is 10 x 10 = 100px
-   */
-  /* width: 10em; */
+  width: 5rem;
+  height: 5rem;
+}
 
-  /* rem is relative to font size of ROOT element,
-   * so if font size is 16px (browser default)
-   * 10rem is 10 x 16 = 160px
-   */
-   width: 10rem;
-  font-size: 10px;
-  height: 100%;
+.box-one {
   background-color: gold;
-  border-top: 2px solid orange;
+}
+
+.box-two {
+  background-color: tomato;
+}
+
+.box-three {
+  background-color: dodgerblue;
 }
