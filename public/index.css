@@ -1,20 +1,42 @@
 .container {
   border: 3px solid lightgray;
   display: flex;
-  height: 90vh;
-  flex-wrap: wrap;
-  align-content: center;
+  flex-direction: row;
+  height: 50vh;
+
+  /* to have multiple rows in case of many boxes */
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
 }
 
 .center-content {
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .box {
-  width: 5rem;
-  height: 5rem;
+  width: 15rem;
+  height: 8rem;
   background: gold;
   margin: 1rem;
+  flex-basis: auto;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+
+  /* shorthand for grow, shrink, and basis */
+  /* flex: 1 1 15rem; */
+}
+
+.box-one {
+  align-self: flex-start;
+  flex-basis: 5rem;
+  /* flex-grow: 5; */
+  flex-shrink: 0;
+}
+
+.box-last {
+  align-self: flex-end;
+  flex-basis: 5rem;
+  /* flex-grow: 4; */
+  flex-shrink: 5;
 }
