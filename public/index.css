@@ -9,12 +9,21 @@
 
 .box-one {
   background-color: gold;
+  position: relative;
+  left: 5rem;
 }
 
 .box-two {
   background-color: tomato;
+  position: relative;
+  left: 4rem;
+  top: 2rem;
+  z-index: 1;
 }
 
 .box-three {
   background-color: dodgerblue;
+  position: relative;
+  left: 2rem;
+  bottom: 2rem;
 }
