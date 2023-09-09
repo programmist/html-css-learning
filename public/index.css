@@ -1,3 +1,8 @@
+body {
+  margin: 10px;
+  height: 200vh;
+}
+
 .boxes {
   border: 3px solid lightgray;
   position: relative;
@@ -6,6 +11,7 @@
 .box {
   width: 5rem;
   height: 5rem;
+  
 }
 
 .box-one {
@@ -14,9 +20,11 @@
 
 .box-two {
   background-color: tomato;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0rem;
+  right: 0rem;
+  width: auto;
   z-index: 1;
 }
 
