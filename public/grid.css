@@ -3,10 +3,13 @@
   border: 3px solid lightgray;
   grid-template-rows: 100px auto 100px;
   grid-template-columns: 30fr 70fr;
-  row-gap: 10px;
-  column-gap: 10px;
   /* shorthand syntax: rows / cols */
   /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
+
+  /* row-gap: 10px; */
+  /* column-gap: 10px; */
+  /* shorthand */
+  gap: 10px;
 
   /* horizontal axis */
   /* justify-items: stretch; */
@@ -20,7 +23,15 @@
   /* center grid  veritically (if room)*/
   /* align-content: center; */
 
-  height: 100vh;
+  height: 95vh;
+
+  /* name grid areas for easier placement 
+     of items */
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    /* ".  footer"; empty footer left col */
+    "footer  footer";
 }
 
 .box {
@@ -31,4 +42,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box-one {
+  /* Move biox to second col, shoving other boxes */
+  /* grid-column: 2; */
+
+  /* stretch from line 1 - 3 (all cols) */
+  /* grid-column: 1/3; */
+
+  /* Move box to 2nd row */
+  /* grid-row: 2; */
+
+  /* span two rows (lines 2 - 4) */
+  /* grid-row: 2/4; */
+  grid-area: header;
+}
+
+.box-last {
+  grid-area: footer;
 }
