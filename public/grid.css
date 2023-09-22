@@ -7,23 +7,23 @@
   /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
 
   /* horizontal axis */
-  justify-items: center;
+  justify-items: stretch;
 
   /* vertical axis */
-  align-items: center;
+  align-items: stretch;
 
   /* center grid horizontally */
-  justify-content: center;
+  /* justify-content: center; */
 
   /* center grid  veritically (if room)*/
-  align-content: center;
+  /* align-content: center; */
 
   height: 100vh;
 }
 
 .box {
-  width: 5rem;
-  height: 5rem;
+  /* width: 5rem;
+  height: 5rem; */
   background: gold;
   margin: 1px;
   display: flex;
