@@ -3,6 +3,8 @@
   border: 3px solid lightgray;
   grid-template-rows: 100px auto 100px;
   grid-template-columns: 30fr 70fr;
+  row-gap: 10px;
+  column-gap: 10px;
   /* shorthand syntax: rows / cols */
   /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
 
