@@ -7,10 +7,10 @@
   /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
 
   /* horizontal axis */
-  justify-items: stretch;
+  /* justify-items: stretch; */
 
   /* vertical axis */
-  align-items: stretch;
+  /* align-items: stretch; */
 
   /* center grid horizontally */
   /* justify-content: center; */
