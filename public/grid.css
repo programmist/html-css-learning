@@ -2,7 +2,7 @@
   display: grid;
   border: 3px solid lightgray;
   grid-template-rows: repeat(3, 100px);
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30fr 70fr;
   /* shorthand syntax: rows / cols */
   /* grid-template: repeat(3, 100px) / repeat(2, 100px); */
 
