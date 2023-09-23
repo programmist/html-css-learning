@@ -21,3 +21,17 @@
     flex-direction: row;
   }
 }
+
+@media print {
+  body {
+    font-size: 15pt;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .box {
+    padding: 0.5cm;
+  }
+}
