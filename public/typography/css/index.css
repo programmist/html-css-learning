@@ -1,64 +1,14 @@
-/* Open Sans */
-@font-face {
-  font-family: "opensans";
-  src: url("fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"),
-    url("fonts/open-sans/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "opensans";
-  src: url("fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
-    url("fonts/open-sans/opensans-bold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "opensans";
-  src: url("fonts/open-sans/opensans-light-webfont.woff2") format("woff2"),
-    url("fonts/open-sans/opensans-light-webfont.woff") format("woff");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-/* Space Mono */
-@font-face {
-  font-family: "space mono";
-  src: url("fonts/space-mono/spacemono-regular-webfont.woff2") format("woff2"),
-    url("fonts/space-mono/spacemono-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "space mono";
-  src: url("fonts/space-mono/spacemono-bold-webfont.woff2") format("woff2"),
-    url("fonts/space-mono/spacemono-bold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
 body {
   margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
 }
 
 p {
   font-weight: normal;
   font-size: 1rem;
   color: #333;
-}
-
-.opensans {
-  font-family: opensans;
-}
-
-.mono {
-  font-family: "space mono";
 }
