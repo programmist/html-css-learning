@@ -50,6 +50,23 @@ p {
   width: 50ch;
 }
 
+p + p {
+  text-indent: 1rem;
+}
+
+p.truncate {
+  white-space: nowrap;
+  border: 3px solid gold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.cols {
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 3px dotted #999;
+}
+
 @media screen and (min-width: 550px) {
   html {
     font-size: 130%;
