@@ -13,6 +13,8 @@ body {
   font-size: 1rem;
   /* benchmark: 1.5 x font-size */
   line-height: 1.5;
+  letter-spacing: 0.3px;
+  /* word-spacing: 1px; */
 }
 
 h1,
@@ -42,6 +44,10 @@ h3 {
 p {
   font-weight: normal;
   color: #333;
+
+  /*  Ideal line length: 50-70 chars */
+  /* 50ch == 50 zero (0) characters */
+  width: 50ch;
 }
 
 @media screen and (min-width: 550px) {
