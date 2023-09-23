@@ -1,15 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   /* body styles */
 
   /* navbar styles (mobile first) */
   & > nav {
     background-color: #000;
-    color: #fff;
-
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
 
     & ul {
-      padding: 25px 20px;
+      padding-left: 0;
       list-style: none;
       display: flex;
       flex-direction: column;
@@ -18,20 +22,26 @@ body {
 
       /* Larger screens */
       @media (min-width: 768px) {
-        flex-direction: row-reverse;
+        flex-direction: row;
+        justify-content: flex-end;
       }
 
       & li {
         display: inline-block;
+        margin: 0.25rem 0;
 
         &:hover {
-          color: aquamarine;
           transform: scale(1.08);
         }
 
         & a {
-          color: inherit;
+          color: #fff;
           text-decoration: none;
+          margin: 0 0.5rem;
+
+          &:hover {
+            color: aquamarine;
+          }
         }
       }
     }
