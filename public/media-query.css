@@ -1,0 +1,23 @@
+/*  Note: Mosh recommends mobile-first design approach, then larger devices */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+  background-color: dodgerblue;
+}
+
+/* Queries can have ranges - though makes no sense for this example */
+/* @media screen and (min-width: 600px) and (max-width: 900px) */
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+}
