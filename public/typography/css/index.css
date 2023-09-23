@@ -11,6 +11,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* 1x font size f root element (html) */
   font-size: 1rem;
+  /* benchmark: 1.5 x font-size */
+  line-height: 1.5;
 }
 
 h1,
@@ -25,6 +27,8 @@ h6 {
 
 h1 {
   font-size: 2rem;
+  /* top margin should be larger than bottom */
+  margin: 3rem 0 1rem;
 }
 
 h2 {
