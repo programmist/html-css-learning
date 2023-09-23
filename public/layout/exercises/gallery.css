@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+
+  /* tablets */
+  @media (min-width: 768px) {
+    grid-template-columns: 50fr 50fr;
+  }
+
+  /* Desktops */
+  @media (min-width: 1024px) {
+    grid-template-rows: repeat(3, 33fr);
+    grid-template-columns: repeat(3, 33fr);
+
+    /* second image should take up 4 top-right grid cells */
+    grid-template-areas:
+      "one   two  two"
+      "three two  two"
+      "four  four four";
+
+    & :nth-child(2) {
+      grid-area: two;
+    }
+  }
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
