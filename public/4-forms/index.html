@@ -7,19 +7,27 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <form action="">
-        <div>
-          <label for="name">Name:</label>
-          <input id="name" type="text" />
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input id="email" type="email" />
-        </div>
-        <button type="submit">Register</button>
-        <button type="reset">clear</button>
-      </form>
-    </div>
+    <form action="">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Your Name"
+          autocomplete="off"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Your Email"
+          data-lpignore="true"
+        />
+      </div>
+      <button type="submit">Register</button>
+      <button type="reset">clear</button>
+    </form>
   </body>
 </html>
