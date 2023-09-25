@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/res-switching.css" />
+    <title>Clipping</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Downloads images/meal@2x.jpg on Macbook retina screen (not monitor)  -->
+      <!-- Use https://responsivebreakpoints.com/ -->
+      <img
+        class="meal"
+        src="images/meal.jpg"
+        alt="salmon curry"
+        srcset="
+          images/meal.jpg     400w,
+          images/meal@2x.jpg  800w,
+          images/meal@3x.jpg 1200w
+        "
+        sizes="
+        (max-width: 500px) 100vw
+        (max-width: 700px) 50vw
+        33vw
+        "
+      />
+    </div>
+  </body>
+</html>
