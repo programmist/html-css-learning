@@ -5,42 +5,26 @@ body {
 
 form {
   margin: 10px;
+  width: 40%;
 }
 
-label {
-  display: block;
+.form-container {
+  display: flex;
+  justify-content: center;
 }
 
-input[type="text"],
-input[type="email"] {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 0.3rem 0.5rem;
-  transition: border-color 0.15s, box-shadow 0.15s;
-}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 
-input[type="text"]:focus,
-input[type="email"]:focus {
-  border-color: #7db0fb;
-  outline: 0;
-  box-shadow: 0 0 6px rgba(24, 117, 255, 0.25);
-}
+  & button {
+    align-self: center;
+    flex-grow: 1;
+    width: 100%;
+  }
 
-button {
-  background: #0d6efd;
-  color: #fff;
-  border: 0;
-  outline: 0;
-  padding: 0.5rem 0.7rem;
-  border-radius: 5px;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-button:hover {
-  background: #0952c0;
-  cursor: pointer;
-}
-
-.form-group {
-  margin-bottom: 1rem;
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+  }
 }
