@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: gold;
+
+  &:hover {
+    cursor: crosshair;
+    transform: rotate(15deg) translate(50px, 50px) scale(1.5) skew(15deg);
+  }
+}
