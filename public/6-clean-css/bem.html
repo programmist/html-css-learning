@@ -1,0 +1,27 @@
+<!-- BEM: Block__Element--Modifier.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bem.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Block__Element: example -->
+    <div class="card">
+      <header class="card__header">
+        <span class="card__price"></span>
+      </header>
+      <div class="card__body">
+        <!-- drop prefix for independent components -->
+        <button class="btn">Some Button</button>
+      </div>
+    </div>
+    <!-- --Modifier example (use "--" instead of "__") -->
+    <div class="card card--popular">
+      <header class="card__header">...</header>
+      <div class="card__body">...</div>
+    </div>
+  </body>
+</html>
