@@ -24,17 +24,53 @@ body {
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-fast {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1440deg);
+  }
+}
+
 .box {
   width: 100px;
   height: 100px;
   background: gold;
 }
 
+.blue {
+  background-color: dodgerblue;
+}
+
+.silver {
+  background-color: silver;
+}
+
+.rotate {
+  animation: rotate 1s infinite linear;
+}
+
+.rotate-really-fast {
+  animation: rotate-fast 1s infinite linear;
+}
+
 .animation-pop {
   animation-name: pop;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
-  /* animation-timing-function: ease-out; */
+  animation-timing-function: ease-in;
   animation-direction: normal;
   /* animation-delay: 1s; */
 }
