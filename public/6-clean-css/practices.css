@@ -1,0 +1,78 @@
+/* 
+ * CSS Best Practices
+ */
+
+/* I. Split CSS into logical section */
+/*    Basic Styles */
+/*    Typography */
+/*    Forms */
+/*    Nav bar */
+/*    Etc */
+
+/* ================================================ */
+
+/* II. Avoid overly-specific selectors, e.g. */
+/* specificity 0,3,3 */
+div.nav > ul.items > li.item {
+  list-style: none;
+}
+
+/* 1. Avoid direct child selectors unless necessary */
+div.nav ul.items li.item {
+  list-style: none;
+}
+
+/* ********** */
+
+/* 2. Avoid element with class selectors unless necessary */
+.nav .items .item {
+  list-style: none;
+}
+
+/* ********** */
+
+/* 3. Remove unnecessary intermediate classes in selectors */
+.nav .item {
+  list-style: none;
+}
+
+/* ********** */
+
+/* 4. Use more-specific names to avoid style leaks */
+.item {
+  background-color: gold;
+}
+
+.nav .item {
+  list-style: none;
+  background-color: none; /* Now you have to override it - sucks */
+}
+
+/* 4.1 Instead use more specific name */
+.nav .nav-item {
+  list-style: none;
+}
+
+/* 4.2 Since the "nav-" prefix was used, parent selector not necessary */
+/* Specificity: 0,1,0 */
+.nav-item {
+  list-style: none;
+}
+
+/* ================================================ */
+
+/* III. Avoid !important keyword */
+/* If you need it, probably means you used overly-specific selector */
+
+/* ================================================ */
+
+/* IV. Sort CSS Selectors (I disagree, but hey...) */
+
+/* ================================================ */
+
+/* V. Take advantage of style inheritance */
+/* - Apply styles to parent elements instead of multiple elements */
+
+/* ================================================ */
+
+/* VI. Avoid repetition (DRY) */
