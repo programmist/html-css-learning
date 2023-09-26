@@ -39,17 +39,38 @@
           <label for="bday">Birthday</label>
           <input id="bday" type="date" autocomplete="off" />
         </div>
+        <div>
+          <label for="bday">Country</label>
+          <small>(implemented as input + dataset)</small>
+          <input id="country" type="text" list="" autocomplete="off" />
+          <datalist id="countries">
+            <option>United States</option>
+            <option>Australia</option>
+            <option>India</option>
+            <option>Canada</option>
+          </datalist>
+        </div>
+        <div>
+          <label for="bday">Courses</label>
+          <small>(implemented as select)</small>
+          <select id="courses">
+            <optgroup label="Front-end Courses">
+              <option value="" selected>Select a Course</option>
+              <option value="">HTML</option>
+              <option value="">CSS</option>
+              <option value="">React</option>
+            </optgroup>
+            <optgroup label="Back-end Courses">
+              <option value="">Python</option>
+              <option value="">Node.js</option>
+              <option value="">SQL</option>
+            </optgroup>
+          </select>
+        </div>
         <div class="button-container">
           <button type="submit">Register</button>
           <button type="reset">Clear</button>
         </div>
-        <input id="country" type="text" list="" autocomplete="off" />
-        <datalist id="countries">
-          <option>United States</option>
-          <option>Australia</option>
-          <option>India</option>
-          <option>Canada</option>
-        </datalist>
       </form>
     </div>
     <script src="index.js" />
