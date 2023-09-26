@@ -28,10 +28,17 @@ body {
   width: 100px;
   height: 100px;
   background: gold;
+}
+
+.animation-pop {
   animation-name: pop;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   /* animation-timing-function: ease-out; */
-  animation-direction: alternate-reverse;
+  animation-direction: normal;
   /* animation-delay: 1s; */
+}
+
+.animation-reverse {
+  animation-direction: reverse;
 }
