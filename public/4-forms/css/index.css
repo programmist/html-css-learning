@@ -28,3 +28,26 @@ form {
     flex-direction: column;
   }
 }
+
+/* Add a caret or some icon on right side of input to
+   indicate that this is a suggestion list */
+datalist {
+  position: absolute;
+  font-family: sans-serif;
+  background-color: white;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+  padding: 0.8rem;
+  max-height: 10rem;
+  overflow-y: auto;
+
+  & option {
+    padding: 0.1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
